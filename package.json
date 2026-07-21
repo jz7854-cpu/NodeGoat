@@ -41,7 +41,7 @@
   "devDependencies": {
     "async": "^2.0.0-rc.4",
     "cross-env": "^7.0.2",
-    "cypress": "^3.3.1",
+    "cypress": "^4.12.0",
     "grunt": "^1.0.3",
     "grunt-cli": "^1.2.0",
     "grunt-concurrent": "^2.3.0",
@@ -51,7 +51,7 @@
     "grunt-if": "https://github.com/binarymist/grunt-if/tarball/master",
     "grunt-jsbeautifier": "^0.2.12",
     "grunt-mocha-test": "^0.12.7",
-    "grunt-npm-install": "^0.3.0",
+    "grunt-npm-install": "^0.3.1",
     "grunt-retire": "^0.3.12",
     "jshint": "2.12.0",
     "mocha": "^2.4.5",
@@ -59,6 +59,13 @@
     "selenium-webdriver": "^2.53.2",
     "should": "^8.3.1",
     "zaproxy": "^0.2.0"
+  },
+  "overrides": {
+    "minimist@<0.2.4": "0.2.4",
+    "minimist@>=1.0.0 <1.2.6": "1.2.6",
+    "npm@<6.14.17": "6.14.17",
+    "tap@<12.6.2": "12.6.2",
+    "nyc@<14.0.0": "14.0.0"
   },
   "repository": "https://github.com/OWASP/NodejsGoat",
   "license": "Apache 2.0"
